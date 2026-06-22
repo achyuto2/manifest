@@ -25,4 +25,4 @@ spec:
           command: ["/bin/bash", "-c","while true; do echo welcome; sleep 10; done"]
       volumes:
         - name: volume1
-          emptydir: {}
+          emptyDir: {}
