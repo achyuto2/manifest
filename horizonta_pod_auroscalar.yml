@@ -16,3 +16,22 @@ spec:
         target:
           type: Utilization
           averageUtilization: 50
+#deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deploy
+spec:
+  selector:
+    matchLabels:
+      app: swiggy
+  template:
+    metadata:
+      labels:
+        app: swiggy
+    spec:
+      containers:
+        - name: cont1
+          image: achyuty/web:tourism
+          ports:
+            - containerPort: 80
