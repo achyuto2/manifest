@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: swiggy
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 1111
       targetPort: 80
