@@ -6,10 +6,10 @@ metadata:
   namespace: dev
 spec:
   hard:
-    requests.cpu: "300m"
-    limits.cpu: "600m"
-    requests.memory: "50Mi"
-    limits.memory: "100Mi"
+    requests.cpu: "350m"
+    limits.cpu: "700m"
+    requests.memory: "75Mi"
+    limits.memory: "150Mi"
 
 #pod with limits
 ---
